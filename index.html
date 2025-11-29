@@ -1,116 +1,58 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cooking Channel</title>
-  <style>
-    body {margin:0; font-family: Arial, sans-serif; background:#fff7e6; color:#333;}
-    header {background:#fff; padding:15px 20px; display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #ddd; position:sticky; top:0;}
-    nav a {margin-left:15px; text-decoration:none; color:#333; font-weight:bold;}
-    .container {max-width:1100px; margin:auto; padding:20px;}
-    .hero {background:#fff; padding:20px; border-radius:15px; box-shadow:0 2px 5px rgba(0,0,0,0.1); display:grid; grid-template-columns:1fr 1fr; gap:20px;}
-    .btn {padding:10px 18px; display:inline-block; border-radius:8px; text-decoration:none; font-weight:bold;}
-    .primary {background:#ff9900; color:#fff;}
-    .outline {border:1px solid #333; color:#333;}
-    .grid {display:grid; gap:20px;}
-    .video-card, .recipe-card {background:#fff; padding:15px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1);}    
-    .recipe-img {width:100%; border-radius:10px; height:160px; object-fit:cover;}
-    footer {text-align:center; padding:20px; margin-top:30px; color:#555;}
-  </style>
-</head>
-<body>
-  <header>
-    <h2>DASTANE COOKING CHANNEL</h2>
-    <nav>
-      <a href="#videos">Videos</a>
-      <a href="#recipes">Recipes</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+</section>
 
-  <div class="container">
-    <!-- Hero Section -->
-    <section class="hero">
-      <div>
-        <h1 style="font-size:32px; font-weight:bold;">Banaye Delicious Recipes — Step by Step</h1>
-        <p style="margin:15px 0;">Har hafte naye videos aur easy‑to‑follow recipes.</p>
-        <a class="btn primary" href="#videos">Watch Videos</a>
-        <a class="btn outline" href="#recipes">View Recipes</a>
-      </div>
 
-      <div>
-        <iframe width="100%" height="250" style="border-radius:10px;" src="https://www.youtube.com/embed/my0laBTTolQ?si=undNASQ1rIIkuzuZ" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section>
+<!-- Recipes Section -->
+<section id="recipes">
+<h2>Recipes</h2>
 
-    <!-- Videos Section -->
-    <section id="videos" style="margin-top:40px;">
-      <h2>Latest Videos</h2>
-      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); margin-top:20px;">
 
-        <div class="video-card">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RB1i0AmSurk?si=toZaqxhWGDmcrG3I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <h3>Perfect Butter Chicken</h3>
-        </div>
+<div class="grid">
+<div class="recipe-card">
+<img class="recipe-img" src="https://images.unsplash.com/photo-1604908177522-7e9f5b2b4b8e" />
+<h3>Butter Chicken</h3>
+<p>45 mins • Medium • Serves 4</p>
+</div>
 
-        <div class="video-card">
-          <iframe width="100%" height="150" src="https://www.youtube.com/embed/ysz5S6PUM-U" allowfullscreen></iframe>
-          <h3>5 Quick Breakfast Ideas</h3>
-        </div>
 
-        <div class="video-card">
-          <iframe width="100%" height="150" src="https://www.youtube.com/embed/3JZ_D3ELwOQ" allowfullscreen></iframe>
-          <h3>Vegetarian Pasta</h3>
-        </div>
+<div class="recipe-card">
+<img class="recipe-img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2" />
+<h3>Masala Omelette</h3>
+<p>10 mins • Easy • Serves 1</p>
+</div>
 
-      </div>
-    </section>
 
-    <!-- Recipes Section -->
-    <section id="recipes" style="margin-top:40px;">
-      <h2>Recipes</h2>
+<div class="recipe-card">
+<img class="recipe-img" src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642" />
+<h3>Tomato Basil Pasta</h3>
+<p>25 mins • Easy • Serves 2</p>
+</div>
+</div>
+</section>
 
-      <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); margin-top:20px;">
 
-        <div class="recipe-card">
-          <img class="recipe-img" src="https://images.unsplash.com/photo-1604908177522-7e9f5b2b4b8e" />
-          <h3>Butter Chicken</h3>
-          <p>45 mins • Medium • Serves 4</p>
-        </div>
+<!-- Contact -->
+<section id="contact" class="contact-box">
+<h2>Contact Us</h2>
+<p>For collaborations or recipe queries:</p>
+<form class="contact-form">
+<input type="text" placeholder="Your Name" />
+<input type="email" placeholder="Email" />
+<textarea placeholder="Message" rows="4"></textarea>
+<button class="btn primary" type="submit">Send</button>
+</form>
+</section>
 
-        <div class="recipe-card">
-          <img class="recipe-img" src="https://images.unsplash.com/photo-1551218808-94e220e084d2" />
-          <h3>Masala Omelette</h3>
-          <p>10 mins • Easy • Serves 1</p>
-        </div>
 
-        <div class="recipe-card">
-          <img class="recipe-img" src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642" />
-          <h3>Tomato Basil Pasta</h3>
-          <p>25 mins • Easy • Serves 2</p>
-        </div>
+</div>
 
-      </div>
-    </section>
 
-    <!-- Contact -->
-    <section id="contact" style="margin-top:40px; background:#fff; padding:20px; border-radius:12px; box-shadow:0 2px 5px rgba(0,0,0,0.1);">
-      <h2>Contact Us</h2>
-      <p style="margin-top:10px;">For collaborations or recipe queries:</p>
-      <form style="margin-top:15px; display:grid; gap:10px; max-width:400px;">
-        <input type="text" placeholder="Your Name" style="padding:10px; border-radius:6px; border:1px solid #aaa;" />
-        <input type="email" placeholder="Email" style="padding:10px; border-radius:6px; border:1px solid #aaa;" />
-        <textarea placeholder="Message" rows="4" style="padding:10px; border-radius:6px; border:1px solid #aaa;"></textarea>
-        <button class="btn primary" type="submit">Send</button>
-      </form>
-    </section>
+<footer>
+© Cooking Channel — Split Version
+</footer>
 
-  </div>
 
-  <footer>
-    © Cooking Channel — Pure HTML Version
-  </footer>
-
+<!-- External JS -->
+<script src="script.js"></script>
 </body>
 </html>
